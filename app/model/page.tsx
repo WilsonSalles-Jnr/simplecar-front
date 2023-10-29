@@ -23,7 +23,7 @@ export default function Model() {
         <Title>Modelos</Title>
         <Button onClick={() => setOpenModal()}>Novo modelo</Button>
       </Group>
-      {data.map(({ name }: { name: string }, index: number) => (
+      {data?.map(({ name }: { name: string }, index: number) => (
         <Card key={index} w="100%">
           <Group justify="space-between">
             <Text>{name}</Text>
