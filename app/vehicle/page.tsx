@@ -30,7 +30,6 @@ export default function Vehicle() {
   const { data: models } = useModels();
   const { data: customerData } = useCustomers();
   const { mutateAsync } = useCreateVehicle();
-  console.log(models);
 
   const handleCreateVehicle = (vehicleForm: {
     licensePlate: string;
